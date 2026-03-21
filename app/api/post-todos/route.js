@@ -3,9 +3,9 @@ import { todos } from "../get-todos/route";
 
 export const POST = async (request) => {
   try {
-    const { heading, description } = await request.json();
+    const { heading, discription } = await request.json();
 
-    if (!heading && !description) {
+    if (!heading && !discription) {
       return NextResponse.json(
         {
           error: "Heading & Description Is required",
@@ -17,7 +17,7 @@ export const POST = async (request) => {
     const neweTodo = {
       id: todos.length + 1,
       heading: heading,
-      description: description,
+      description: discription,
     };
 
     todos.push(neweTodo);

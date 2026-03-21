@@ -4,17 +4,17 @@ export const todos = [
   {
     id: 1,
     heading: "Learn React",
-    description: "Start Learning React.js",
+    discription: "Start Learning React.js",
   },
   {
     id: 2,
     heading: "Learn Next.js",
-    description: "Start Learning Next.js",
+    discription: "Start Learning Next.js",
   },
   {
     id: 3,
     heading: "Interview prep",
-    description: "Start Interview prepration",
+    discription: "Start Interview prepration",
   },
 ];
 export const GET = async (request) => {
