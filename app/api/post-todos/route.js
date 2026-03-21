@@ -3,7 +3,7 @@ import { todos } from "../get-todos/route";
 
 export const POST = async (request) => {
   try {
-    const { heading, description } = await request.json;
+    const { heading, description } = await request.json();
 
     if (!heading && !description) {
       return NextResponse.json(
